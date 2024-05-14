@@ -1,4 +1,6 @@
 import Button from "./Button";
+import NumberGuessingGame from "./NumberGuessingGame";
+import GuessControl from "./GuessControl";
 
 function GameOver({ hasWon, onReset }) {
   return (
@@ -8,6 +10,7 @@ function GameOver({ hasWon, onReset }) {
         <h2>You didn't guess my number. Would you like to try again?</h2>
       )}
       <Button onClick={onReset}>Play Again!</Button>
+      onReset= {handleReset}
     </div>
   );
 }
